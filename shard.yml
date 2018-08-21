@@ -1,0 +1,8 @@
+name: syslog
+version: 0.1.0
+license: ISC
+
+crystal: 0.25.1
+
+authors:
+  - Chris Huxtable <chris@huxtable.ca>

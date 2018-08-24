@@ -3,8 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/chris-huxtable/syslog.cr.svg)](https://github.com/chris-huxtable/syslog.cr/releases)
 [![Build Status](https://travis-ci.org/chris-huxtable/syslog.cr.svg?branch=master)](https://travis-ci.org/chris-huxtable/syslog.cr)
 
-
-Adds syslog functionality to crystal.
+Adds syslog functionality to crystal via LibC bindings.
 
 
 ## Installation

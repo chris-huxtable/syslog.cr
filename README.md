@@ -28,20 +28,20 @@ require "syslog"
 Basic Usage:
 
 ```crystal
-Syslog.emergency("This is a notice message")
-Syslog.alert("This is a notice message")
-Syslog.critical("This is a notice message")
-Syslog.error("This is a notice message")
-Syslog.warning("This is a notice message")
+Syslog.emergency("This is an emergency message")
+Syslog.alert("This is an alert message")
+Syslog.critical("This is a critical message")
+Syslog.error("This is an error message")
+Syslog.warning("This is a warning message")
 Syslog.notice("This is a notice message")
-Syslog.info("This is a info message")
+Syslog.info("This is an info message")
 Syslog.debug("This is a debug message")
 ```
 
 Facility Usage:
 
 ```crystal
-Syslog.info("This is a info message sent to the LOCAL0 Facility", Syslog::Facility::Local0)
+Syslog.info("This is an info message sent to the LOCAL0 Facility", Syslog::Facility::Local0)
 ```
 
 

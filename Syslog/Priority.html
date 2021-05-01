@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="syslog">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="syslog">
+  <title>Syslog::Priority - syslog HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          syslog
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="syslog/Syslog" data-name="syslog">
+      <a href="../Syslog.html">Syslog</a>
+      
+        <ul>
+  
+  <li class=" " data-id="syslog/Syslog/Facility" data-name="syslog::facility">
+      <a href="../Syslog/Facility.html">Facility</a>
+      
+    </li>
+  
+  <li class=" " data-id="syslog/Syslog/Options" data-name="syslog::options">
+      <a href="../Syslog/Options.html">Options</a>
+      
+    </li>
+  
+  <li class=" current" data-id="syslog/Syslog/Priority" data-name="syslog::priority">
+      <a href="../Syslog/Priority.html">Priority</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">enum</span> Syslog::Priority
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L162" target="_blank">
+        syslog.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="enum-members" class="anchor" href="#enum-members">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Enum Members
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="Emergency">
+        <strong>Emergency</strong> = <code><span class="n">0</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Alert">
+        <strong>Alert</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Critical">
+        <strong>Critical</strong> = <code><span class="n">2</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Error">
+        <strong>Error</strong> = <code><span class="n">3</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Warning">
+        <strong>Warning</strong> = <code><span class="n">4</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Notice">
+        <strong>Notice</strong> = <code><span class="n">5</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Info">
+        <strong>Info</strong> = <code><span class="n">6</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Debug">
+        <strong>Debug</strong> = <code><span class="n">7</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#alert?-instance-method" class="signature"><strong>#alert?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#critical?-instance-method" class="signature"><strong>#critical?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#debug?-instance-method" class="signature"><strong>#debug?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#emergency?-instance-method" class="signature"><strong>#emergency?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#error?-instance-method" class="signature"><strong>#error?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#info?-instance-method" class="signature"><strong>#info?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#notice?-instance-method" class="signature"><strong>#notice?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#warning?-instance-method" class="signature"><strong>#warning?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="alert?-instance-method">
+      <div class="signature">
+        
+        def <strong>alert?</strong>
+
+        <a class="method-permalink" href="#alert?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L164" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="critical?-instance-method">
+      <div class="signature">
+        
+        def <strong>critical?</strong>
+
+        <a class="method-permalink" href="#critical?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L165" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="debug?-instance-method">
+      <div class="signature">
+        
+        def <strong>debug?</strong>
+
+        <a class="method-permalink" href="#debug?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L170" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="emergency?-instance-method">
+      <div class="signature">
+        
+        def <strong>emergency?</strong>
+
+        <a class="method-permalink" href="#emergency?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L163" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="error?-instance-method">
+      <div class="signature">
+        
+        def <strong>error?</strong>
+
+        <a class="method-permalink" href="#error?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L166" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="info?-instance-method">
+      <div class="signature">
+        
+        def <strong>info?</strong>
+
+        <a class="method-permalink" href="#info?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L169" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="notice?-instance-method">
+      <div class="signature">
+        
+        def <strong>notice?</strong>
+
+        <a class="method-permalink" href="#notice?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L168" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="warning?-instance-method">
+      <div class="signature">
+        
+        def <strong>warning?</strong>
+
+        <a class="method-permalink" href="#warning?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L167" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

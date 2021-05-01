@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="syslog">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="syslog">
+  <title>Syslog::Facility - syslog HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          syslog
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="syslog/Syslog" data-name="syslog">
+      <a href="../Syslog.html">Syslog</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="syslog/Syslog/Facility" data-name="syslog::facility">
+      <a href="../Syslog/Facility.html">Facility</a>
+      
+    </li>
+  
+  <li class=" " data-id="syslog/Syslog/Options" data-name="syslog::options">
+      <a href="../Syslog/Options.html">Options</a>
+      
+    </li>
+  
+  <li class=" " data-id="syslog/Syslog/Priority" data-name="syslog::priority">
+      <a href="../Syslog/Priority.html">Priority</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">enum</span> Syslog::Facility
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L139" target="_blank">
+        syslog.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="enum-members" class="anchor" href="#enum-members">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Enum Members
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="Authorization">
+        <strong>Authorization</strong> = <code><span class="n">32</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Privilage">
+        <strong>Privilage</strong> = <code><span class="n">80</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Cron">
+        <strong>Cron</strong> = <code><span class="n">72</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Daemon">
+        <strong>Daemon</strong> = <code><span class="n">24</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="FTP">
+        <strong>FTP</strong> = <code><span class="n">88</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kernal">
+        <strong>Kernal</strong> = <code><span class="n">0</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="LPR">
+        <strong>LPR</strong> = <code><span class="n">48</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mail">
+        <strong>Mail</strong> = <code><span class="n">16</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="News">
+        <strong>News</strong> = <code><span class="n">56</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Syslog">
+        <strong>Syslog</strong> = <code><span class="n">40</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="User">
+        <strong>User</strong> = <code><span class="n">8</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UUCP">
+        <strong>UUCP</strong> = <code><span class="n">64</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local0">
+        <strong>Local0</strong> = <code><span class="n">128</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local1">
+        <strong>Local1</strong> = <code><span class="n">136</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local2">
+        <strong>Local2</strong> = <code><span class="n">144</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local3">
+        <strong>Local3</strong> = <code><span class="n">152</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local4">
+        <strong>Local4</strong> = <code><span class="n">160</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local5">
+        <strong>Local5</strong> = <code><span class="n">168</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local6">
+        <strong>Local6</strong> = <code><span class="n">176</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Local7">
+        <strong>Local7</strong> = <code><span class="n">184</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#authorization?-instance-method" class="signature"><strong>#authorization?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cron?-instance-method" class="signature"><strong>#cron?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#daemon?-instance-method" class="signature"><strong>#daemon?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ftp?-instance-method" class="signature"><strong>#ftp?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kernal?-instance-method" class="signature"><strong>#kernal?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local0?-instance-method" class="signature"><strong>#local0?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local1?-instance-method" class="signature"><strong>#local1?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local2?-instance-method" class="signature"><strong>#local2?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local3?-instance-method" class="signature"><strong>#local3?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local4?-instance-method" class="signature"><strong>#local4?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local5?-instance-method" class="signature"><strong>#local5?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local6?-instance-method" class="signature"><strong>#local6?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#local7?-instance-method" class="signature"><strong>#local7?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lpr?-instance-method" class="signature"><strong>#lpr?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mail?-instance-method" class="signature"><strong>#mail?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#news?-instance-method" class="signature"><strong>#news?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#privilage?-instance-method" class="signature"><strong>#privilage?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#syslog?-instance-method" class="signature"><strong>#syslog?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#user?-instance-method" class="signature"><strong>#user?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uucp?-instance-method" class="signature"><strong>#uucp?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="authorization?-instance-method">
+      <div class="signature">
+        
+        def <strong>authorization?</strong>
+
+        <a class="method-permalink" href="#authorization?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L140" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cron?-instance-method">
+      <div class="signature">
+        
+        def <strong>cron?</strong>
+
+        <a class="method-permalink" href="#cron?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L142" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="daemon?-instance-method">
+      <div class="signature">
+        
+        def <strong>daemon?</strong>
+
+        <a class="method-permalink" href="#daemon?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L143" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ftp?-instance-method">
+      <div class="signature">
+        
+        def <strong>ftp?</strong>
+
+        <a class="method-permalink" href="#ftp?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L144" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kernal?-instance-method">
+      <div class="signature">
+        
+        def <strong>kernal?</strong>
+
+        <a class="method-permalink" href="#kernal?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local0?-instance-method">
+      <div class="signature">
+        
+        def <strong>local0?</strong>
+
+        <a class="method-permalink" href="#local0?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local1?-instance-method">
+      <div class="signature">
+        
+        def <strong>local1?</strong>
+
+        <a class="method-permalink" href="#local1?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L153" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local2?-instance-method">
+      <div class="signature">
+        
+        def <strong>local2?</strong>
+
+        <a class="method-permalink" href="#local2?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L154" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local3?-instance-method">
+      <div class="signature">
+        
+        def <strong>local3?</strong>
+
+        <a class="method-permalink" href="#local3?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L155" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local4?-instance-method">
+      <div class="signature">
+        
+        def <strong>local4?</strong>
+
+        <a class="method-permalink" href="#local4?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L156" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local5?-instance-method">
+      <div class="signature">
+        
+        def <strong>local5?</strong>
+
+        <a class="method-permalink" href="#local5?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L157" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local6?-instance-method">
+      <div class="signature">
+        
+        def <strong>local6?</strong>
+
+        <a class="method-permalink" href="#local6?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L158" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="local7?-instance-method">
+      <div class="signature">
+        
+        def <strong>local7?</strong>
+
+        <a class="method-permalink" href="#local7?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lpr?-instance-method">
+      <div class="signature">
+        
+        def <strong>lpr?</strong>
+
+        <a class="method-permalink" href="#lpr?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L146" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mail?-instance-method">
+      <div class="signature">
+        
+        def <strong>mail?</strong>
+
+        <a class="method-permalink" href="#mail?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L147" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="news?-instance-method">
+      <div class="signature">
+        
+        def <strong>news?</strong>
+
+        <a class="method-permalink" href="#news?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L148" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="privilage?-instance-method">
+      <div class="signature">
+        
+        def <strong>privilage?</strong>
+
+        <a class="method-permalink" href="#privilage?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L141" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="syslog?-instance-method">
+      <div class="signature">
+        
+        def <strong>syslog?</strong>
+
+        <a class="method-permalink" href="#syslog?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L149" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="user?-instance-method">
+      <div class="signature">
+        
+        def <strong>user?</strong>
+
+        <a class="method-permalink" href="#user?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L150" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uucp?-instance-method">
+      <div class="signature">
+        
+        def <strong>uucp?</strong>
+
+        <a class="method-permalink" href="#uucp?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L151" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

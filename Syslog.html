@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="syslog">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="syslog">
+  <title>Syslog - syslog HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          syslog
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="syslog/Syslog" data-name="syslog">
+      <a href="Syslog.html">Syslog</a>
+      
+        <ul>
+  
+  <li class=" " data-id="syslog/Syslog/Facility" data-name="syslog::facility">
+      <a href="Syslog/Facility.html">Facility</a>
+      
+    </li>
+  
+  <li class=" " data-id="syslog/Syslog/Options" data-name="syslog::options">
+      <a href="Syslog/Options.html">Options</a>
+      
+    </li>
+  
+  <li class=" " data-id="syslog/Syslog/Priority" data-name="syslog::priority">
+      <a href="Syslog/Priority.html">Priority</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Syslog
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L17" target="_blank">
+        syslog.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#alert(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.alert</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an alert <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#close:Nil-class-method" class="signature"><strong>.close</strong> : Nil</a>
+        
+          <div class="summary"><p>Closes the current logger.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#critical(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.critical</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an critical <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#debug(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.debug</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an debug <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#emergency(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.emergency</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an emergency <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#error(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.error</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an error <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#facility:Facility-class-method" class="signature"><strong>.facility</strong> : Facility</a>
+        
+          <div class="summary"><p>Returns the loggers default facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#facility=(facility:Facility):Nil-class-method" class="signature"><strong>.facility=</strong>(facility : Facility) : Nil</a>
+        
+          <div class="summary"><p>Sets the loggers default facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#info(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.info</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an info <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#log(priority:Priority,message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.log</strong>(priority : Priority, message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes a message with a priority and facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mask:UInt16-class-method" class="signature"><strong>.mask</strong> : UInt16</a>
+        
+          <div class="summary"><p>Returns the loggers mask.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mask=(mask:Int):Nil-class-method" class="signature"><strong>.mask=</strong>(mask : Int) : Nil</a>
+        
+          <div class="summary"><p>Sets the loggers mask.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#notice(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.notice</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an notice <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options:Options-class-method" class="signature"><strong>.options</strong> : Options</a>
+        
+          <div class="summary"><p>Returns the loggers options.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options=(options:Options):Nil-class-method" class="signature"><strong>.options=</strong>(options : Options) : Nil</a>
+        
+          <div class="summary"><p>Sets the loggers options.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#prefix:String-class-method" class="signature"><strong>.prefix</strong> : String</a>
+        
+          <div class="summary"><p>Returns the string to be prefixed to log messages.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#prefix=(prefix:String):Nil-class-method" class="signature"><strong>.prefix=</strong>(prefix : String) : Nil</a>
+        
+          <div class="summary"><p>Sets the string to be prefixed to log messages.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reset_defaults:Nil-class-method" class="signature"><strong>.reset_defaults</strong> : Nil</a>
+        
+          <div class="summary"><p>Resets all the loggers options to their defaults.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#setup(prefix:String,facility:Facility,options:Options,mask:Int):Nil-class-method" class="signature"><strong>.setup</strong>(prefix : String, facility : Facility, options : Options, mask : Int) : Nil</a>
+        
+          <div class="summary"><p>Sets all the loggers options at once.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#warning(message:String,facility:Facility?=nil):Nil-class-method" class="signature"><strong>.warning</strong>(message : String, facility : Facility? = <span class="n">nil</span>) : Nil</a>
+        
+          <div class="summary"><p>Writes an warning <em>syslog</em> message with an optional facility.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="alert(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>alert</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#alert(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an alert <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L105" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="close:Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>close</strong> : Nil
+
+        <a class="method-permalink" href="#close:Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Closes the current logger.
+Useful for shard libraries where the prefix may be unloaded.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L86" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="critical(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>critical</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#critical(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an critical <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="debug(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>debug</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#debug(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an debug <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L135" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="emergency(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>emergency</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#emergency(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an emergency <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L100" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="error(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>error</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#error(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an error <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L115" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="facility:Facility-class-method">
+      <div class="signature">
+        
+        def self.<strong>facility</strong> : <a href="Syslog/Facility.html">Facility</a>
+
+        <a class="method-permalink" href="#facility:Facility-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the loggers default facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="facility=(facility:Facility):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>facility=</strong>(facility : <a href="Syslog/Facility.html">Facility</a>) : Nil
+
+        <a class="method-permalink" href="#facility=(facility:Facility):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets the loggers default facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="info(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>info</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#info(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an info <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L130" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="log(priority:Priority,message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>log</strong>(priority : <a href="Syslog/Priority.html">Priority</a>, message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#log(priority:Priority,message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes a message with a priority and facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L91" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mask:UInt16-class-method">
+      <div class="signature">
+        
+        def self.<strong>mask</strong> : UInt16
+
+        <a class="method-permalink" href="#mask:UInt16-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the loggers mask.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mask=(mask:Int):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>mask=</strong>(mask : Int) : Nil
+
+        <a class="method-permalink" href="#mask=(mask:Int):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets the loggers mask.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L57" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="notice(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>notice</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#notice(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an notice <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L125" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options:Options-class-method">
+      <div class="signature">
+        
+        def self.<strong>options</strong> : <a href="Syslog/Options.html">Options</a>
+
+        <a class="method-permalink" href="#options:Options-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the loggers options.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options=(options:Options):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>options=</strong>(options : <a href="Syslog/Options.html">Options</a>) : Nil
+
+        <a class="method-permalink" href="#options=(options:Options):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets the loggers options.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="prefix:String-class-method">
+      <div class="signature">
+        
+        def self.<strong>prefix</strong> : String
+
+        <a class="method-permalink" href="#prefix:String-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the string to be prefixed to log messages.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="prefix=(prefix:String):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>prefix=</strong>(prefix : String) : Nil
+
+        <a class="method-permalink" href="#prefix=(prefix:String):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets the string to be prefixed to log messages.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reset_defaults:Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>reset_defaults</strong> : Nil
+
+        <a class="method-permalink" href="#reset_defaults:Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Resets all the loggers options to their defaults.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="setup(prefix:String,facility:Facility,options:Options,mask:Int):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>setup</strong>(prefix : String, facility : <a href="Syslog/Facility.html">Facility</a>, options : <a href="Syslog/Options.html">Options</a>, mask : Int) : Nil
+
+        <a class="method-permalink" href="#setup(prefix:String,facility:Facility,options:Options,mask:Int):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets all the loggers options at once.
+This is more efficient when changing many settings.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="warning(message:String,facility:Facility?=nil):Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>warning</strong>(message : String, facility : <a href="Syslog/Facility.html">Facility</a>? = <span class="n">nil</span>) : Nil
+
+        <a class="method-permalink" href="#warning(message:String,facility:Facility?=nil):Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Writes an warning <em>syslog</em> message with an optional facility.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/chris-huxtable/syslog.cr/blob/ec0a4c4f0ff16663c6040d4387cd1446e6f06f9c/src/syslog.cr#L120" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
